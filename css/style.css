@@ -41,6 +41,10 @@ Modules
     padding-top: 64px;
     padding-bottom: 64px;
 }
+.logo img {
+    height: 23px;
+    display: inline-block;
+}
 
 .menu {
     list-style: none;
