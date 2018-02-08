@@ -1,0 +1,60 @@
+/********************************** 
+CSS Reset
+***********************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/********************************** 
+Base Rules
+***********************************/
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+}
+
+
+/********************************** 
+Layout Rules
+***********************************/
+.wrap {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 20px;
+    /* border: 10px solid red; */
+    overflow: auto;
+}
+
+
+/********************************** 
+Modules
+***********************************/
+
+.header {
+    background-color: rgba(53, 63, 71, 0.7);
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.menu {
+    list-style: none;
+    font-size: 0;
+    float: right;
+}
+.menu li {
+    display: inline-block;
+    margin: 0 22px;
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+}
