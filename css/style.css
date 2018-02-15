@@ -37,7 +37,11 @@ h3 {
     font-weight: 600;
     text-transform: uppercase;
 }
-
+p {
+    font-size: 14px;
+    margin: 26px 0;
+    line-height: 1.7;
+}
 
 /********************************** 
 Layout Rules
@@ -51,7 +55,25 @@ Layout Rules
     overflow: auto;
 }
 
+.gallery {
+    font-size: 0;
+    margin: 0 -15px 0 -15px;
+}
+.gallery-item-2 {
+    font-size: 14px;
+    display: inline-block;
+    width: 50%;
+    padding: 15px;
+    vertical-align: top;
+}
 
+.gallery-item-4 {
+    font-size: 14px;
+    display: inline-block;
+    width: 25%;
+    padding: 15px;
+    vertical-align: top;
+}
 /********************************** 
 Components
 ***********************************/
@@ -81,6 +103,18 @@ Components
     color: #4BCAFF;
 }
 
+
+.button {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    color: inherit;
+    text-decoration: none;
+    border: 2px solid;
+    padding: 16px 38px;
+}
+
 /********************************** 
 Modules
 ***********************************/
@@ -92,6 +126,7 @@ Modules
     left: 0;
     top: 0;
     color: white;
+    z-index: 9000;
 }
 .header .wrap {
     padding-top: 64px;
@@ -136,17 +171,28 @@ Modules
     color: white;
 }
 .service-gallery {
-    font-size: 0;
-    margin: 40px -15px 0 -15px;
+    /* font-size: 0;
+    margin: 40px -15px 0 -15px; */
+    margin-top: 40px;
 }
-.service-item {
+/* .service-item {
     display: inline-block;
     width: 25%;
-    /* outline: 1px solid red; */
+
     padding: 15px;
+} */
+.service-image {
+    
+    border: 2px solid;
+    width: 70px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 66px;
 }
 .services img {
     height: 48px;
+    display: inline-block;
+    vertical-align: middle;
 }
 .services h3 {
     margin-top: 24px;
@@ -159,4 +205,69 @@ Modules
 
 .portfolio {
     color: #515F67;
+}
+
+.portfolio-gallery {
+    /* font-size: 0;
+    margin: 65px -15px 0 -15px; */
+    margin-top: 65px;
+}
+
+/* .portfolio-item {
+    font-size: 14px;
+    display: inline-block;
+    width: 25%;
+    padding: 15px;
+    vertical-align: top;
+} */
+.portfolio-item a {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+}
+.portfolio-item img {
+    width: 100%;
+}
+
+.portfolio-overlay {
+    background-color: rgba(53, 63, 71, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .5s, visibility .5s;
+}
+.portfolio-item a:hover .portfolio-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+.portfolio-overlay span {
+    font-size: 72px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* outline: 1px solid red; */
+}
+
+.products {
+    background-color: rgb(111, 122, 141);
+    color: white;
+}
+.product-gallery {
+    margin-top: 40px;
+}
+
+
+.about {
+    background-color: #353F47;
+    color: white;
+}
+.about iframe {
+    width: 100%;
+    height: 300px;
 }
