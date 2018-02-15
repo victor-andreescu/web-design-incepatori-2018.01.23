@@ -31,6 +31,13 @@ h2::after {
     height: 2px;
     border-bottom: 2px solid;
 }
+h2 + img, 
+h2 + i {
+    float: right;
+    height: 21px;
+    margin-top: 9px;
+    font-size: 20px;
+}
 
 h3 {
     font-size: 24px;
@@ -41,6 +48,27 @@ p {
     font-size: 14px;
     margin: 26px 0;
     line-height: 1.7;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 470px;
+    height: 64px;
+    border: 2px solid white;
+    background: transparent;
+}
+textarea {
+    max-width: 100%;
+    height: 220px;
 }
 
 /********************************** 
@@ -113,7 +141,30 @@ Components
     text-decoration: none;
     border: 2px solid;
     padding: 16px 38px;
+    transition: color .3s, border .3s;
 }
+.button:hover {
+    color: #4BCAFF;
+}
+.button-icon {
+    padding-left: 0;
+    padding-right: 0;
+    width: 64px;
+    text-align: center;
+    font-size: 24px;
+}
+.button-group {
+    font-size: 0;
+    margin-left: -10px;
+    margin-right: -10px;
+    /* text-align: center; */
+}
+.button-group .button {
+    margin: 0 10px;
+}
+/* .button-icon img {
+    height: 24px;
+} */
 
 /********************************** 
 Modules
@@ -182,7 +233,6 @@ Modules
     padding: 15px;
 } */
 .service-image {
-    
     border: 2px solid;
     width: 70px;
     border-radius: 50%;
@@ -193,6 +243,15 @@ Modules
     height: 48px;
     display: inline-block;
     vertical-align: middle;
+}
+.service-image-bg {
+    border: 2px solid;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .services h3 {
     margin-top: 24px;
@@ -270,4 +329,72 @@ Modules
 .about iframe {
     width: 100%;
     height: 300px;
+}
+
+.twitter {
+    background-color: #4BCAFF;
+    color: white;
+}
+
+
+/* .twitter p {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1.78;
+}
+.testimonials p {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1.78;
+} */
+.twitter p, 
+.testimonials p {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1.78;
+}
+
+.twitter a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+}
+
+
+.who {
+    background-image: url('/img/about.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+
+.testimonials {
+    color: #515F67;
+}
+
+p.testimonial-author {
+    color: #4BCAFF;
+    font-weight: 700 !important;
+    font-size: 14px;
+}
+/* .testimonials .testimonial-author {
+    color: #4BCAFF;
+    font-weight: 700 !important;
+    font-size: 14px;
+} */
+/* .testimonials .wrap .fas.fa-quote-right ~ p.testimonial-author {
+    color: #4BCAFF;
+    font-weight: 700 !important;
+    font-size: 14px;
+} */
+
+
+.contact {
+    background-image: url('/img/contact.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
 }
